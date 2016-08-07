@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>com.sunw</groupId>
+  <artifactId>sunw-simple-search</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <timestamp>20150925.053259</timestamp>
+      <buildNumber>1</buildNumber>
+    </snapshot>
+    <lastUpdated>20150925053259</lastUpdated>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>jar</extension>
+        <value>1.0-20150925.053259-1</value>
+        <updated>20150925053259</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>1.0-20150925.053259-1</value>
+        <updated>20150925053259</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+</metadata>
