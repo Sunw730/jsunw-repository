@@ -19,8 +19,8 @@ pom.xml:
 ```
 ```xml
     <dependency>
-        <groupId>com.sunw</groupId>
-        <artifactId>sunw-simple-search</artifactId>
+        <groupId>com.jsunw</groupId>
+        <artifactId>jsunw-simple-search</artifactId>
         <version>1.0-SNAPSHOT</version>
     </dependency>
 ```
