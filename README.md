@@ -16,11 +16,22 @@ setting.xml:
                         <id>jsunw-repository-snapshot</id>
                         <name>jsunw-repository-snapshot</name>
                         <url>https://github.com/Sunw730/jsunw-repository/tree/snapshot</url>
+                        <releases>
+    						<enabled>false</enabled>
+    					</releases>
+    					<snapshots>    
+    						<enabled>true</enabled>  
+    						<updatePolicy>always</updatePolicy>  
+    						<checksumPolicy>warn</checksumPolicy>    
+    					</snapshots>  
                     </repository>
                     <repository>
                         <id>jsunw-repository-release</id>
                         <name>jsunw-repository-release</name>
                         <url>https://github.com/Sunw730/jsunw-repository/tree/release</url>
+                        <snapshots>
+    						<enabled>false</enabled>
+    					</snapshots>
                     </repository>
                 </repositories>	
     		</profile>
