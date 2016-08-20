@@ -73,6 +73,7 @@ setting.xml:
     	</activeProfiles>
     </settings>
 ```
+pom.xml
 ```xml
     <!-- 引入jsunw的jar包，例如 -->
     <dependency>
