@@ -11,7 +11,45 @@ setting.xml:
     	<profiles>   
     		<profile>
     			<id>jsunw</id>
+    			
+    			<!-- 指定jdk版本 -->
+                <activation>
+                    <jdk>1.8</jdk>
+                </activation>
+    			
     			<repositories>
+    			
+    			    <!-- 公共仓库 -->
+    			    <repository>
+                        <id>apache repo</id>
+                        <name>apache repo</name>
+                        <url>http://repo.maven.apache.org/maven2/</url>
+                        <layout>default</layout>
+                        <releases>
+                            <enabled>true</enabled>
+                            <updatePolicy>never</updatePolicy>
+                            <checksumPolicy>warn</checksumPolicy>
+                        </releases>
+                        <snapshots>
+                            <enabled>false</enabled>
+                        </snapshots>
+                    </repository>
+                    <repository>
+                        <id>mvnrepository</id>
+                        <name>mvnrepository</name>
+                        <url>https://mvnrepository.com/</url>
+                        <layout>default</layout>
+                        <snapshots>
+                            <enabled>false</enabled>
+                        </snapshots>
+                        <releases>
+                            <enabled>true</enabled>
+                            <updatePolicy>never</updatePolicy>
+                            <checksumPolicy>warn</checksumPolicy>
+                        </releases>
+                    </repository>
+    			
+    			    <!-- jsunw 仓库 -->
                     <repository>
                         <id>jsunw-repository-snapshot</id>
                         <name>jsunw-repository-snapshot</name>
@@ -25,38 +63,18 @@ setting.xml:
     						<checksumPolicy>warn</checksumPolicy>    
     					</snapshots>  
                     </repository>
-                    <repository>
-                        <id>jsunw-repository-release</id>
-                        <name>jsunw-repository-release</name>
-                        <url>https://github.com/Sunw730/jsunw-repository/tree/release</url>
-                        <snapshots>
-    						<enabled>false</enabled>
-    					</snapshots>
-                    </repository>
                 </repositories>	
     		</profile>
     	</profiles>
+    	
+    	<!-- 使用profile配置 -->
     	<activeProfiles>
     		<activeProfile>jsunw</activeProfile>
     	</activeProfiles>
     </settings>
 ```
-或者 pom.xml:
 ```xml
-    <repositories>
-        <repository>
-            <id>jsunw-repository-snapshot</id>
-            <name>jsunw-repository-snapshot</name>
-            <url>https://github.com/Sunw730/jsunw-repository/tree/snapshot</url>
-        </repository>
-        <repository>
-            <id>jsunw-repository-release</id>
-            <name>jsunw-repository-release</name>
-            <url>https://github.com/Sunw730/jsunw-repository/tree/release</url>
-        </repository>
-    </repositories>
-```
-```xml
+    <!-- 引入jsunw的jar包，例如 -->
     <dependency>
         <groupId>com.jsunw</groupId>
         <artifactId>jsunw-simple-search</artifactId>
